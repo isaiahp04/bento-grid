@@ -182,10 +182,10 @@ p {
         height: 67px;
     }
     h2 {
-        font-size: 2.875rem;
+        font-size: 4rem;
         font-weight: 500;
-        line-height: 2.625rem;
-        letter-spacing: 0.024rem;
+        line-height: 3.563rem;
+        letter-spacing: -0.06rem;
     }
     .percentage {
         display: flex;
@@ -307,6 +307,12 @@ p {
     /*>56 FASTER AUDIENCE GROWTH*/
     .item-6 {
         gap: 24px;
+        h2 {
+            font-size: 2.875rem;
+            font-weight: 500;
+            line-height: 2.625rem;
+            letter-spacing: 0.024rem;
+        }
     }
 
     /*WRITE YOUR CONTENT USING AI*/
