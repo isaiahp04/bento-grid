@@ -1,0 +1,385 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap');
+
+
+:root {
+    --purple-100: hsl(254, 88%, 90%);
+    --purple-500: hsl(256, 67%, 59%);
+    --yellow-100: hsl(31, 66%, 93%);
+    --yellow-500: hsl(39, 100%, 71%);
+    --white: hsl(0, 0%, 100%);
+    --black: hsl(0, 0%, 7%);    
+}
+
+* {
+    margin: 0%;
+}
+
+body {
+    background-color: #f5f5f5;
+    font-family: "DM Sans";
+    color: var(--black);
+    font-size: 1.125rem;
+    line-height: 1.25rem;
+    letter-spacing: -0.01rem;
+    max-height: 1000dvh;
+    display: flex;
+    justify-content: center;
+    gap: 24px;
+}
+
+.container {
+    padding: 83px 154px 64px;
+    height: 881px;
+    display: grid;
+    grid-template-columns: repeat(4, 256px);
+    grid-template-rows: 324px 59px 156px 246px;
+    gap: 32px;
+    grid-template-areas: 
+    "item-7 item-1 item-1 item-4"
+    "item-7 item-2 item-3 item-4"
+    "item-8 item-2 item-3 item-4"
+    "item-8 item-6 item-5 item-5"
+}
+
+h1 {
+    font-size: 4rem;
+    font-weight: 500;
+    line-height: 3.563rem;
+    letter-spacing: -0.06rem;
+}
+
+h2 {
+    font-size: 2rem;
+    font-weight: 500;
+    line-height: 1.75rem;
+    letter-spacing: -0.06rem;
+}
+
+p {
+    font-size: 1.125rem;
+    font-weight: 500;
+    line-height: 1.25rem;
+    letter-spacing: -0.01rem;
+}
+
+/*ITEMS*/
+
+/*OVER 4,000 STAR REVIEWS*/
+.item-1 {
+    background-color: var(--purple-500);
+    color: var(--purple-100);
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+    padding: 63px 52px 61px;
+    border-radius: 10px;
+    grid-area: item-1;
+    img {
+        width: 193px;
+        height: 32px;
+    }
+    h1 {
+        color: white;
+    }
+    .ratings {
+        display: flex;
+        gap: 8px;
+        flex-direction: column;
+        align-items: center;
+    }
+}
+
+/*MANAGE MULTIPLE ACCOUNTS AND PLATFORMS*/
+.item-2 {
+    background-color: white;
+    color: var(--black);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-start;
+    overflow: hidden;
+    padding: 32px 24px;
+    border-radius: 10px;
+    grid-area: item-2;
+    img {
+        width: 318px;
+        height: 67px;
+    }
+}
+
+/*MAINTAIN A CONSISTENT POSTING SCHEDULE*/
+.item-3 {
+    background-color: var(--yellow-500);
+    color: var(--black);
+    height: 199px;
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+    gap: 16px;
+    padding: 24px;
+    border-radius: 10px;
+    grid-area: item-3;
+    img {
+        width: 208px;
+        height: 157px;
+    }
+}
+
+/*SCHEDULE TO SOCIAL MEDIA*/
+.item-4 {
+    background-color: var(--purple-100);
+    color: var(--black);
+    text-align: left;
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+    overflow: hidden;
+    padding: 50px 32px;
+    align-items: flex-start;
+    border-radius: 10px;
+    grid-area: item-4;
+    img {
+        width: 358px;
+        height: 319px;
+    }
+}
+
+/*GROW FOLLOWERS WITH NON-STOP CONTENT*/
+.item-5 {
+    background-color: var(--purple-500);
+    color: white;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+    padding: 24px;
+    border-radius: 10px;
+    grid-area: item-5;
+    img {
+        width: 227px;
+        height: 200px;
+    }
+    h2 {
+        font-size: 2.5rem;
+        line-height: 2.25rem;
+        letter-spacing: -0.08rem;
+    }
+}
+
+/*>56 FASTER AUDIENCE GROWTH*/
+.item-6 {
+    background-color: white;
+    color: var(--black);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 24px 21px;
+    border-radius: 10px;
+    grid-area: item-6;
+    img {
+        width: 179px;
+        height: 67px;
+    }
+    h2 {
+        font-size: 2.875rem;
+        font-weight: 500;
+        line-height: 2.625rem;
+        letter-spacing: 0.024rem;
+    }
+    .percentage {
+        display: flex;
+        flex-direction: column;
+        gap: 15px
+    }
+}
+
+/*CREATE AND SCHEDULE YOUR CONTENT*/
+.item-7 {
+    background-color: var(--yellow-100);
+    color: var(--black);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 23px;
+    padding: 32px 31px;
+    border-radius: 10px;
+    grid-area: item-7;
+    img {
+        width: 192px;
+        height: 91px;
+    }
+    h2 {
+        font-size: 2.5rem;
+        line-height: 2.25rem;
+        letter-spacing: -0.10rem;
+    }
+}
+
+/*WRITE YOUR CONTENT USING AI*/
+.item-8 {
+    background-color: var(--yellow-500);
+    color: var(--black);
+    text-align: left;
+    display: flex; 
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 24px;
+    padding: 24px;
+    border-radius: 10px;
+    grid-area: item-8;
+    img {
+        width: 220px;
+        height: 223px;
+    }
+    h2 {
+        font-size: 2.5rem;
+        line-height: 2.25rem;
+        letter-spacing: -0.10rem;
+    }
+}
+
+@media only screen and (max-width: 1439px) {
+    .container {
+        padding: 64px 32px;
+    }
+}
+
+@media only screen and (max-width: 1199px) {
+    .container {
+        padding: 32px 24px;
+        height: 0%;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(2, 1fr);
+        grid-template-areas: 
+        "item-1 item-1"
+        "item-2 item-3"
+        "item-4 item-4"
+        "item-5 item-5"
+        "item-6 item-7"
+        "item-8 item-8";
+    }
+    
+    h1 {
+        font-size: 2.875rem;
+        font-weight: 500;
+        line-height: 2.625rem;
+        letter-spacing: 0.024rem;
+    }
+
+    /*ITEMS*/
+
+    /*OVER 4,000 STAR REVIEWS*/
+    .item-1 {
+        justify-content: space-between;
+        padding: 40px 44px 39px;
+    }
+    
+    /*MANAGE MULTIPLE ACCOUNTS AND PLATFORMS*/
+    .item-2 {
+        justify-content: center;
+        gap: 15px;
+        padding: 24px;
+    }
+    
+    /*MAINTAIN A CONSISTENT POSTING SCHEDULE*/
+    .item-3 {
+        height: 195px;
+    }
+    
+    /*SCHEDULE TO SOCIAL MEDIA*/
+    .item-4 {
+        text-align: center;
+        align-items: center;
+        padding: 31px 18px 32px;
+        img {
+            width: 307px;
+            height: 274px;
+        }
+    }
+    
+    /*GROW FOLLOWERS WITH NON-STOP CONTENT*/
+    .item-5 {
+        gap: 41px;
+    }
+    
+    /*>56 FASTER AUDIENCE GROWTH*/
+    .item-6 {
+        gap: 24px;
+    }
+
+    /*WRITE YOUR CONTENT USING AI*/
+    .item-8 {
+        align-items: center;
+    }
+}
+
+@media only screen and (max-width: 767px) {
+    body {
+        display: block;
+    }
+    
+    .container {
+        padding: 32px 16px;
+        display: flex;
+        flex-direction: column;
+        height: 0%;
+    }
+       
+    h2 {
+        font-size: 1.563rem;
+        font-weight: 500;
+        line-height: 1.5rem;
+        letter-spacing: -0.04rem;
+    }
+    
+    /*OVER 4,000 STAR REVIEWS*/
+    .item-1 {
+        padding: 40px 44px 39px;
+    }
+    
+    /*MANAGE MULTIPLE ACCOUNTS AND PLATFORMS*/
+    .item-2 {
+        padding: 16px 14px 17px;
+    }
+    
+    /*MAINTAIN A CONSISTENT POSTING SCHEDULE*/
+    .item-3 {
+        height: 186px;
+        padding: 15px 16px;
+    }
+    
+    /*SCHEDULE TO SOCIAL MEDIA*/
+    .item-5 {
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 23px 58px 24px;
+        h2 {
+            font-size: 2rem;
+            line-height: 1.75rem;
+            letter-spacing: -0.06rem;
+        }
+    }
+    
+    /*CREATE AND SCHEDULE YOUR CONTENT*/
+    .item-7 {
+        h2 {
+            font-size: 2rem;
+            line-height: 1.75rem;
+            letter-spacing: -0.06rem; 
+        }
+    }
+    
+    /*WRITE YOUR CONTENT USING AI*/
+    .item-8 {
+        align-items: flex-start;
+        h2 {
+            font-size: 2rem;
+            line-height: 1.75rem;
+            letter-spacing: -0.06rem; 
+        }
+    }
+}
